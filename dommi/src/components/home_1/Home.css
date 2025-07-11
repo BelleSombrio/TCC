@@ -1,3 +1,139 @@
+
+
+.container_1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  gap: 30px;
+}
+
+/* Agrupamento do texto e da imagem */
+.grupo_texto_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  width: 100%;
+
+}
+
+/* Texto à esquerda */
+.texto_img {
+  flex: 1;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 26px;
+  font-weight: 400;
+  color: #444;
+  text-align: left;
+   min-width: 100px;
+}
+
+/* Imagem à direita */
+.img_salon {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+   min-width: 100px;
+}
+
+.img_salon img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Formulário abaixo */
+.formulario {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+.endereco {
+  padding: 10px;
+  border: 2px solid #f48fb1;
+  border-radius: 8px;
+  font-size: 16px;
+  width: 100%;
+  background-color: white;
+  width: 350px;
+  height: 25px;
+}
+
+.linha-menores {
+  display: flex;
+  gap: 10px;
+}
+
+.data,
+.hora {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid #f48fb1;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: white;
+  width: 100px;
+  height: 25px;
+}
+
+.agendar {
+  padding: 12px;
+  background-color: #f48fb1;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 65%;
+  width: 100px;
+  height: 25px;
+}
+
+.formulario input::placeholder {
+  color: #888;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .grupo_texto_img {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .texto_img,
+  .img_salon {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .agendar {
+   width: 150px;
+  height: 40px;
+  }
+}
+
+.Carossel {
+ margin: 5px;
+
+}
+
+.texto-carrosel {
+   font-family: 'Quicksand', sans-serif;
+  font-size: 26px;
+  font-weight: 400;
+  color: #444;
+  margin-bottom: 2px
+}
+
+
+
+
 .carousel {
   display: flex;
   height: 100px;
@@ -15,92 +151,3 @@
   margin: 10px;
 }
 
-.container_1 {
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
-      padding: 20px;
-      gap: 30px; ;
-     
-    }
-
-    .texto_img {
-       max-width: 50%;
-       font-family: 'Quicksand', sans-serif;
-      font-size: 28px; /* Tamanho similar ao h2 */
-      font-weight: 400; /* Leve e suave */
-      margin: 0 0 10px 0;
-      color: #444;
-       
-    }
-
-    .img_salon {
-      width: 40%;
-    }
-
-    .img_salon img {
-      max-width: 100%;
-      height: auto;
-    }
-
-     .formulario {
-      margin-top: 30px;
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-    }
-
-    .endereco {
-      padding: 10px;
-      border: 2px solid #f48fb1; /* rosa */
-      border-radius: 8px;
-      font-size: 16px;
-      width: 100%;
-      background-color: white;
-    }
-
-    .linha-menores {
-      display: flex;
-      gap: 10px;
-    }
-
-    .data, .hora {
-      flex: 1;
-      padding: 10px;
-      border: 2px solid #f48fb1;
-      border-radius: 8px;
-      font-size: 16px;
-      background-color: white;
-    }
-
-    .agendar {
-      padding: 12px;
-      background-color: #f48fb1;
-      border: none;
-      border-radius: 8px;
-      color: white;
-      font-size: 16px;
-      font-weight: bold;
-      cursor: pointer;
-      width: 65%; /* maior que os campos acima */
-    }
-
-    .formulario input::placeholder {
-      color: #888;
-    }
-
-    /* Responsividade opcional */
-    @media (max-width: 768px) {
-      .container {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      .texto {
-        max-width: 100%;
-      }
-
-      .agendar {
-        width: 100%;
-      }
-    }
