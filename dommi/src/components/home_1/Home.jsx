@@ -17,8 +17,7 @@ export default function Home() {
             <img
               src="https://img.freepik.com/vetores-premium/salao-de-cabeleireiro-com-corte-de-cabelo-e-penteado-no-salao-de-beleza-ou-barbeiro-em-ilustracao-plana-dos-desenhos-animados_2175-8670.jpg?semt=ais_items_boosted&w=740"
               alt=""
-              height="140px"
-              width="180px"
+             
             />
           </div>
         </div>
@@ -53,12 +52,12 @@ export default function Home() {
         <div className='texto-carrosel'>
           <p>Famosos no Dommi</p>
         </div>
-        <div className='carousel'>
-          <div className="card"></div>
-          <div className="card"></div>
-          <div className="card"></div>
-          <div className="card"></div>
-          <div className="card"></div>
+        <div className='carousel famosos'>
+          <div className="card ret"></div>
+          <div className="card ret"></div>
+          <div className="card ret"></div>
+          <div className="card ret"></div>
+          <div className="card ret"></div>
         </div>
       </div>
 

@@ -6,16 +6,20 @@
   align-items: center;
   padding: 20px;
   gap: 30px;
+  max-width: 430px ;
+  max-height: 932px ;
 }
 
+.card img {
+  object-fit: cover;
+}
 /* Agrupamento do texto e da imagem */
 .grupo_texto_img {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
   flex-wrap: wrap;
-  width: 100%;
+  width: 430px;
 
 }
 
@@ -27,7 +31,7 @@
   font-weight: 400;
   color: #444;
   text-align: left;
-   min-width: 100px;
+  width: 100px;
 }
 
 /* Imagem à direita */
@@ -35,7 +39,8 @@
   flex: 1;
   display: flex;
   justify-content: center;
-   min-width: 100px;
+   width: 140px;
+
 }
 
 .img_salon img {
@@ -99,24 +104,7 @@
   color: #888;
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
-  .grupo_texto_img {
-    flex-direction: column;
-    align-items: center;
-  }
 
-  .texto_img,
-  .img_salon {
-    max-width: 100%;
-    text-align: center;
-  }
-
-  .agendar {
-   width: 150px;
-  height: 40px;
-  }
-}
 
 .Carossel {
  margin: 5px;
@@ -137,7 +125,7 @@
 .carousel {
   display: flex;
   height: 100px;
-  width: 100%;
+  width: 430px;
   overflow-x: scroll;
   white-space: nowrap;
 }
@@ -149,5 +137,16 @@
   border: 1px solid wheat;
   min-width: 200px;
   margin: 10px;
+  overflow: hidden;
+}
+
+.ret {
+ width: 200px;
+  height: 300px;
+}
+
+.famosos {
+  width: 98%;
+  height: 400px;
 }
 
